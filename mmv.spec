@@ -1,4 +1,4 @@
-Summary:	Utility for wildcard renaming, copying, etc.
+Summary:	Utility for wildcard renaming, copying, etc
 Summary(pl):	Narzêdzie do zmiany nazw i kopiowania wielu plików naraz
 Name:		mmv
 Version:	1.0.1b
