@@ -2,7 +2,7 @@ Summary:	Utility for wildcard renaming, copying, etc
 Summary(pl):	Narzêdzie do zmiany nazw i kopiowania wielu plików naraz
 Name:		mmv
 Version:	1.0.1b
-Release:	5
+Release:	6
 License:	Freeware
 Group:		Applications/File
 Source0:	ftp://ftp.usg.edu/pub/unix/packages/%{name}-%{version}.tar.gz
@@ -24,7 +24,12 @@ beginning, or proceeding by avoiding the offending parts.
 %description -l pl
 mmv jest programem do przenoszenia, kopiowania, ³±czenia wielu plików
 wed³ug zestawu masek. Czynno¶ci te s± wykonywane bezpiecznie, bez
-przypadkowego skasowania plików z powodu konfliktu nazw.
+przypadkowego skasowania plików z powodu konfliktu nazw z plikami
+istniej±cymi lub innymi docelowymi. Co wiêcej, przed wykonaniem
+czegokolwiek mmv próbuje wykryæ wszelkie b³êdy, które wynik³yby z
+wykonania wszystkich podanych akcji i daje u¿ytkownikowi wybór miêdzy
+anulowaniem ca³o¶ci operacji lub wykonaniem z pominiêciem b³êdnych
+czê¶ci.
 
 %prep
 %setup -q -c
