@@ -6,6 +6,7 @@ Release:	5
 License:	Freeware
 Group:		Applications/File
 Source0:	ftp://ftp.usg.edu/pub/unix/packages/%{name}-%{version}.tar.gz
+# Source0-md5:	3bbf82c9e52a35183c5d596ae66fd9bc
 Patch0:		%{name}-linux.patch
 Patch1:		%{name}-cpp_macros.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
