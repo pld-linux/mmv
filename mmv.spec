@@ -47,13 +47,11 @@ echo ".so mmv.1" > $RPM_BUILD_ROOT%{_mandir}/man1/mad.1
 echo ".so mmv.1" > $RPM_BUILD_ROOT%{_mandir}/man1/mcp.1
 echo ".so mmv.1" > $RPM_BUILD_ROOT%{_mandir}/man1/mln.1
 
-gzip -9nf ANNOUNCE READ.ME ARTICLE
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc ANNOUNCE READ.ME ARTICLE
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
