@@ -1,0 +1,40 @@
+--- mmv-1.0.1b/mmv.c~	Thu Dec 20 19:20:19 2001
++++ mmv-1.0.1b/mmv.c	Thu Dec 20 19:24:20 2001
+@@ -1258,12 +1258,15 @@
+ 	else if (repbad || checkto(hfrom, f, phto, pnto, pfdel) || badname(*pnto))
+ 		printf("%s -> %s : bad new name.\n", pathbuf, fullrep);
+ 	else if (*phto == NULL)
+-		printf("%s -> %s : %s.\n", pathbuf, fullrep,
++	{
++		const char *msg =
+ #ifndef IS_MSDOS
+ 			direrr == H_NOREADDIR ?
+ 			"no read or search permission for target directory" :
+ #endif
+-			"target directory does not exist");
++			"target directory does not exist";
++		printf("%s -> %s : %s.\n", pathbuf, fullrep, msg);
++	}
+ #ifndef IS_MSDOS
+ 	else if (!dwritable(*phto))
+ 		printf("%s -> %s : no write permission for target directory.\n",
+@@ -2312,15 +2315,16 @@
+ 		!fwritable(hnt, fto)
+ #endif
+ 	) {
+-		printf("%s%s -> %s%s : %s%s %s.\n",
+-			hnf, f, hnt, t, hnt, t,
++		const char *msg =
+ #ifndef IS_MSDOS
+ #ifdef S_IFLNK
+ 			fto->fi_stflags & FI_LINKERR ?
+ 			"is a badly aimed symbolic link" :
+ #endif
+ #endif
+-			"lacks write permission");
++			"lacks write permission";
++		printf("%s%s -> %s%s : %s%s %s.\n",
++			hnf, f, hnt, t, hnt, t, msg);
+ 	}
+ 	else
+ 		return(0);
