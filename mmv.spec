@@ -5,8 +5,6 @@ Version:	1.0.1b
 Release:	5
 License:	Freeware
 Group:		Applications/File
-Group(de):	Applikationen/Datei
-Group(pl):	Aplikacje/Pliki
 Source0:	ftp://ftp.usg.edu/pub/unix/packages/%{name}-%{version}.tar.gz
 Patch0:		%{name}-linux.patch
 Patch1:		%{name}-cpp_macros.patch
