@@ -1,5 +1,5 @@
 Summary:	Utility for wildcard renaming, copying, etc
-Summary(pl):	Narzêdzie do zmiany nazw i kopiowania wielu plików naraz
+Summary(pl.UTF-8):   NarzÄ™dzie do zmiany nazw i kopiowania wielu plikÃ³w naraz
 Name:		mmv
 Version:	1.0.1b
 Release:	6
@@ -21,15 +21,15 @@ detect any errors that would result from the entire set of actions
 specified and gives the user the choice of either aborting before
 beginning, or proceeding by avoiding the offending parts.
 
-%description -l pl
-mmv jest programem do przenoszenia, kopiowania, ³±czenia wielu plików
-wed³ug zestawu masek. Czynno¶ci te s± wykonywane bezpiecznie, bez
-przypadkowego skasowania plików z powodu konfliktu nazw z plikami
-istniej±cymi lub innymi docelowymi. Co wiêcej, przed wykonaniem
-czegokolwiek mmv próbuje wykryæ wszelkie b³êdy, które wynik³yby z
-wykonania wszystkich podanych akcji i daje u¿ytkownikowi wybór miêdzy
-anulowaniem ca³o¶ci operacji lub wykonaniem z pominiêciem b³êdnych
-czê¶ci.
+%description -l pl.UTF-8
+mmv jest programem do przenoszenia, kopiowania, Å‚Ä…czenia wielu plikÃ³w
+wedÅ‚ug zestawu masek. CzynnoÅ›ci te sÄ… wykonywane bezpiecznie, bez
+przypadkowego skasowania plikÃ³w z powodu konfliktu nazw z plikami
+istniejÄ…cymi lub innymi docelowymi. Co wiÄ™cej, przed wykonaniem
+czegokolwiek mmv prÃ³buje wykryÄ‡ wszelkie bÅ‚Ä™dy, ktÃ³re wynikÅ‚yby z
+wykonania wszystkich podanych akcji i daje uÅ¼ytkownikowi wybÃ³r miÄ™dzy
+anulowaniem caÅ‚oÅ›ci operacji lub wykonaniem z pominiÄ™ciem bÅ‚Ä™dnych
+czÄ™Å›ci.
 
 %prep
 %setup -q -c
