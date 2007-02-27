@@ -1,0 +1,13 @@
+--- mmv-1.0.1b/mmv.c.orig	2007-02-27 23:39:44.000000000 +0100
++++ mmv-1.0.1b/mmv.c	2007-02-27 23:40:10.000000000 +0100
+@@ -127,10 +127,6 @@
+ #include <unistd.h>
+ #include <utime.h>
+ 
+-extern char *getenv();
+-extern long lseek();
+-extern char *malloc();
+-
+ #ifdef HAS_DIRENT
+ #include <dirent.h>
+ typedef struct dirent DIRENTRY;

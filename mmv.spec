@@ -2,13 +2,14 @@ Summary:	Utility for wildcard renaming, copying, etc
 Summary(pl.UTF-8):	Narzędzie do zmiany nazw i kopiowania wielu plików naraz
 Name:		mmv
 Version:	1.0.1b
-Release:	6
+Release:	7
 License:	Freeware
 Group:		Applications/File
 Source0:	ftp://ftp.usg.edu/pub/unix/packages/%{name}-%{version}.tar.gz
 # Source0-md5:	3bbf82c9e52a35183c5d596ae66fd9bc
 Patch0:		%{name}-linux.patch
 Patch1:		%{name}-cpp_macros.patch
+Patch2:		%{name}-malloc.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,6 +36,7 @@ części.
 %setup -q -c
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 %{__cc} %{rpmldflags} %{rpmcflags} -DIS_SYSV -DHAS_DIRENT -DHAS_RENAME -o mmv mmv.c
